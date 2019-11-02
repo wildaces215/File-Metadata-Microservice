@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Metadata Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css"
+    />
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <br />
+    <div class="uk-flex uk-flex-center">
+      <div class="uk-card uk-card-default uk-card-body uk-margin-left">
+        <h1>File Metadata Upload Project</h1>
+        <h3>Please upload a file</h3>
+      </div>
+    </div>
+    <br />
+    <div>
+      <form enctype="multipart/form-data" method="POST" action="/api/decode">
+        <div class="js-upload uk-placeholder uk-text-center">
+          <span uk-icon="icon: cloud-upload"></span>
+          <span class="uk-text-middle"
+            >Attach binaries by dropping them here then hit submit button</span
+          >
+          <div uk-form-custom>
+            <input type="file" name="upfile" multiple />
+            <br />
+            <br />
+            <button class="uk-button uk-button-default">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
